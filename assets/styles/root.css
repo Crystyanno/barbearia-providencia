@@ -1,7 +1,8 @@
 :root {
-    --fundo: #222831;
-    --fundo-secundadrio: #7A7A7A;
+    --background-primary: #000000;
+    --background-secundadrio: #7A7A7A;
     --text-color: white;
     --button-color: #EC8C08;
+    --button-hover: #a36103;
 }
 
