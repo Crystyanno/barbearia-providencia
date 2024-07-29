@@ -147,3 +147,32 @@ body {
 #footer span {
     color: var(--button-color);
 }
+
+/* Midia Queries*/
+@media (min-width: 700px) {
+    #navbar {
+        height: 180px;
+    }
+
+    #navbar-container {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .navbar-items {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    #navbar-items li :nth-child(2) {
+        border-top: 1px solid var(--text-color);
+        border-bottom: 1px solid var(--background-primary);
+    }
+
+    #showcase-container {
+        padding: 40px;
+    }
+
+    
+}
