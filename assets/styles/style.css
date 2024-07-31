@@ -1,18 +1,26 @@
 * {
-    box-sizing: border-box;
     margin: 0;
+    box-sizing: border-box;
     padding: 0;
     text-decoration: none;
     list-style: none;
 }
 
+:root {
+    --background-primary: #000000;
+    --background-secundadrio: #7A7A7A;
+    --text-color: white;
+    --button-color: #EC8C08;
+    --button-hover: #ec8c05b0;
+}
+
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto' , sans-serif;
 }
 
 .btn {
     display: inline-block;
-    padding: 15px;
+    padding: 15px 60px;
     font-size: 1.1rem;
     text-transform: uppercase;
     background: var(--button-color);
@@ -23,7 +31,7 @@ body {
 
 .btn:hover {
     cursor: pointer;
-    background: var(--button-hover);
+    background: var(--button-color);
 }
 
 .headline {
@@ -40,7 +48,6 @@ body {
     background: var(--background-primary);
     color: var(--text-color);
     height: 80px;
-    position: fixed;
 }
 
 #navbar-container {
@@ -56,11 +63,9 @@ body {
     font-size: 2rem;
 }
 
-.navbar-items {
+#navbar-itmes {
     display: flex;
-    justify-content: space-between ;
     text-transform: uppercase;
-    gap: 20px;
 }
 
 #navbar-items li {
@@ -73,15 +78,14 @@ body {
     justify-content: center;
     align-items: center;
     color: var(--text-color);
-    background-image: url(../images/Banner/home.jpg);
-    background-repeat: no-repeat;
+    background: url(../images/Banner/home.jpg) no-repeat center center/cover;
 
     /*Overlay*/
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: color;
 }
 
-#showcase-container {
+#chowcase-container {
     text-align: center;
 }
 
@@ -94,26 +98,101 @@ body {
     padding: 7px 0;
 }
 
-#servicos {
-    width: 90%;
-    margin: auto;
+#clientes {
+    width: 100%;
+}
+
+#clientes-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    padding: 15px;
+}
+
+.cliente {
+    display: inline-block;
+    width: 25%;
+}
+
+#features {
+    width: 100%;
+    background: var(--background-primary);
+    color: var(--text-color);
     padding: 50px;
 }
 
-.servicos-container {
+#features-container {
+    width: 100%;
+    margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
 }
 
-
-
-.servico-image {
-    display: inline-block;
-    width: 540px;
-    height: 360px;
+.feature {
+    display: flex;
+    flex-direction: column;
+    background: var(--background-primary);
+    padding: 20px;
     border-radius: 5px;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#product {
+    width: 100%;
+    padding: 50px;
+}
+
+#product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#items {
+    width: 650px;
+}
+
+#items .item {
+   display: flex;
+   padding: 10px;
+   margin: 15px 0;
+   font-size: 1.2rem; 
+}
+
+.testmonial {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    background: var(--background-primary);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+#testmonials {
+    width: 100%;
+    background: var(--background-secundadrio);
+    color: var(--text-color);
+    padding: 50px;
+}
+
+#testmonials-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testmonial .testmonial-image {
+    height: 200px;
+    width: auto;
+    border-radius: 50px;
+    margin: 15px;
 }
 
 #gallery {
@@ -122,7 +201,7 @@ body {
     padding: 50px;
 }
 
-#gallery-contanier {
+#gallery-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
@@ -131,10 +210,9 @@ body {
 
 .gallery-image {
     display: inline-block;
-    width: 540px;
-    height: 360px;
+    width: 380px;
+    height: 260px;
     border-radius: 5px;
-    justify-items: center;
 }
 
 #footer {
@@ -142,37 +220,4 @@ body {
     color: var(--text-color);
     padding: 30px;
     text-align: center;
-}
-
-#footer span {
-    color: var(--button-color);
-}
-
-/* Midia Queries*/
-@media (min-width: 700px) {
-    #navbar {
-        height: 180px;
-    }
-
-    #navbar-container {
-        flex-direction: column;
-        padding: 20px 0;
-    }
-
-    .navbar-items {
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-    }
-
-    #navbar-items li :nth-child(2) {
-        border-top: 1px solid var(--text-color);
-        border-bottom: 1px solid var(--background-primary);
-    }
-
-    #showcase-container {
-        padding: 40px;
-    }
-
-    
 }
