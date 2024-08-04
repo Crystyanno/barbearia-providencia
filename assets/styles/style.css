@@ -18,6 +18,36 @@ body {
     font-family: 'Roboto' , sans-serif;
 }
 
+a {
+    color: inherit;
+}
+
+#estilo {
+    position: relative;
+    background: var(--button-color);
+    font-size: 14px;
+    color: var(--text-color);
+    padding: 20px 70px;
+}
+
+.element-container {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    align-items: center;
+}
+
+.estilo title {
+    position: relative;
+    min-height: 1px;
+    display: flex;
+}
+
+#estilo img {
+    width: 30px;
+}
+
 .btn {
     display: inline-block;
     padding: 15px 60px;
@@ -48,6 +78,12 @@ body {
     background: var(--background-primary);
     color: var(--text-color);
     height: 80px;
+    position: fixed;
+}
+
+#navbar a:hover {
+    color: var(--button-color);
+    font: bold;
 }
 
 #navbar-container {
@@ -63,7 +99,11 @@ body {
     font-size: 2rem;
 }
 
-#navbar-itmes {
+span {
+    color: var(--button-color);
+}
+
+#navbar-items {
     display: flex;
     text-transform: uppercase;
 }
@@ -85,7 +125,7 @@ body {
     background-blend-mode: color;
 }
 
-#chowcase-container {
+#showcase-container {
     text-align: center;
 }
 
@@ -111,7 +151,7 @@ body {
 
 .cliente {
     display: inline-block;
-    width: 25%;
+    width: 33%;
 }
 
 #features {
@@ -134,6 +174,11 @@ body {
     background: var(--background-primary);
     padding: 20px;
     border-radius: 5px;
+}
+
+.feature-image {
+    width: 80px;
+    align-items: center;
 }
 
 .feature-title {
