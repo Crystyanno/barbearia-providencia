@@ -196,7 +196,7 @@ span {
 }
 
 .description p {
-    color: #b0b0ba;
+    color: var(--text-color);
     padding-top: 5px;
 }
 
@@ -235,6 +235,64 @@ input:checked + label .description {
 
 .card[for="c5"] {
     background-image: url(../images/Serviços/sobrancelha.jpg);
+}
+
+.about {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.about-container {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.content-about {
+    float: left;
+    width: 55%;
+}
+
+.image-section {
+    float: right;
+    width: 40%;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.content-about .title {
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.content-about .content h3 {
+    margin-top: 20px;
+    color: #5d5d5d;
+}
+
+.content-about .content p {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.content-about .redesocial {
+    margin-top: 40px;
+}
+
+.content-about .redesocial i {
+    color: var(--background-primary);
+    font-size: 30px;
+    padding: 0px 10px;
+}
+
+.content-about .redesocial i:hover {
+    color: var(--button-color);
 }
 
 .footer {
